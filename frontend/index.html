@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & City Info Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Travel & City Info Dashboard</h2>
+
+    <div class="input-group">
+      <input id="cityInput" placeholder="Enter city name" oninput="showSuggestions()" autocomplete="off">
+      <button onclick="getData()">Search</button>
+      <button onclick="resetFields()" class="reset">Reset</button>
+      <ul id="suggestions"></ul>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
